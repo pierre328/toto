@@ -1,29 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #conteneur{display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-content: space-around;
+}
+.element{
+   width: 300px;
+   height: 50px;
+   font-weight: bold;
+   text-align: center;
+   color:white;
+   background-color: rgb(219, 216, 32);
+   border-radius: 10px;
+}
+.flexbox{
+         border: 4px solid rgb(235, 135, 148);
+         padding: 5px;
+         text-align: center; 
+         border-radius: 10px;
+       }
+       
+      ul{ display: flex;
+      justify-content: space-around;
+      padding: 0;
+      }
+    
+     
+      li{
+         list-style-type: none;
+         font-size: 1rem;
+         height: 50px;
+         width: 150px;
+         background: #9be5bf;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 15px; 
+      }
+      v1{
+   display: Flex;
+   justify-content: space-between;
+   border-radius: 15px; 
+}  
+    </style>
 </head>
 <body>
-<h1> Bonjour</h1>
-    <h3>
-     <p align="center">
-     Le col de Larche en automne
-    </p>
-        </h3>
-   <br/>
-    <h3>
-         <p align="center">
-        On y  est passé il y a pas très longtemps  à l'automne!
-         </p>    
-    </h3> 
-      <br/>
+     
     
-    
-    <p align="center">
+<main>
+    <div class="position">
 
-    <img src="Cuneo octobre 2021 (1).jpg "   width="700" alt = "col de Larche" align="center">
-    </p>
-  <a href="santana.html">Vers Saint Anne</a>
+        <h2> Un peu de tout</h2>
+  
+
+
+
+        <div class="flexbox"> 
+            <ul>
+            <li>
+                <a href="Italie.html">    Souvenirs d'Italie   </a> 
+            </li>
+            <li>
+                <a href="santana.html">   Saint Anne  </a>   
+            </li>
+            <li>
+                <a href="oeuvre_mica.html">   Des Oeuvres de Mica  </a>   
+            </li>
+            <li>
+                <a href="petitenffant.html">   Dessin des petits enfants  </a> 
+            </li>
+            <li>
+                <a href="video.html">   2 ou 3 vidéos  </a> 
+            </li>
+        </ul>
+    </div>
+       
+          <h2> Une chanson <br/>
+        <audio controls
+        src="./asset/perfide.mp3" >
+
+        </audio>
+</h2>
+</div>
+</main>
+<div id="conteneur">
+   
+<div class="element"> <a href="Italie.html">    Souvenirs d'Italie   </a> </div>
+<div class="element"><a href="santana.html">   Saint Anne  </a> </div>
+<div class="element"> <a href="oeuvre_mica.html">   Des Oeuvres de Mica  </a>   </div>
+<div class="element"> <a href="petitenffant.html">   Dessin des petits enfants  </a>   </div>
+<div class="element">     <a href="video.html">   2 ou 3 vidéos  </a>  </div>
+</div>
+
+    <v1> 
+    <a href="petitenffant.html" style="float: left;" > <img src="flecheg.png" > </a> 
+     
+    
+    <a href="Italie.html" style="float: right;"> <img src="fleched.png" > </a> 
+</v1>   
 </body>
 </html>
